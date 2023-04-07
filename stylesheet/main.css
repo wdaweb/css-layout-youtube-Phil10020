@@ -15,13 +15,6 @@ a {
     color: #fff;
 }
 
-.float-l {
-    float: left;
-}
-
-.float-r {
-    float: right;
-}
 
 .header {
     height: 56px;
@@ -32,6 +25,12 @@ a {
 .menu {
 	width: 40px;
 	padding: 8px;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
 }
 
 .logo {
@@ -56,12 +55,25 @@ a {
 	top: 25%;
 	transform: translateY(-25%);
 }
+
+.search-bar-wrap div:nth-child(2) {
+	background: rgba(255, 255, 255, .09);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 10px;
+}
+
+.search-bar-wrap div:nth-child(2) > s {
+	line-height: 40px;
+}
 .search-bar > input {
 	border-top: 1px solid rgba(255, 255, 255, .14);
 	border-left: 1px solid rgba(255, 255, 255, .14);
 	border-bottom: 1px solid rgba(255, 255, 255, .14);
 	border-right: none;
-	background-color: rgba(255, 255, 255, .14);
+	background-color: black;
 	border-radius: 40px 0 0 40px;
 	color: white;
 	font-size: 12px;
@@ -78,3 +90,138 @@ a {
 	height: 40px;
 	width: 64px;
 }
+
+.top-info {
+	margin-top: 25px;
+}
+
+.top-info > s{
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.right-list {
+	height: calc(100vh - 56px);
+	display: inline-block;
+	width: 80%;
+}
+
+
+
+.right-list-top {
+	height: 56px;
+}
+
+.right-list-top > label:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	transition: background-color .3s ease-in-out;
+}
+
+.right-list-top > label {
+	display: inline-block;
+	padding: 8px 12px;
+	background: rgba(255, 255, 255, .14);
+	border-radius: 10px;
+	font-size: 14px;
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+	margin: 0 3px;
+}
+
+
+.right-list-top > input[type="radio"]:checked+label {
+	background: #fff;
+	color: #000;
+}
+
+.right-list-top > input {
+	display: none;
+}
+
+
+.left-list {
+	width: 15%;
+	height: calc(100vh - 56px);
+	display: inline-block;
+	padding: 5px 5px;
+	overflow: hidden;
+	/* background: #fff; */
+}
+
+.left-list:hover {
+	overflow:scroll;
+}
+
+.left-list-top  label:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, .14);
+	color: white;
+	transition: background-color .3s ease-in-out;
+
+}
+
+.left-list-top  label {
+	display: block;
+	padding: 8px 12px;
+	background: black;
+	border-radius: 10px;
+	font-size: 14px;
+	position: relative;
+	top:50%;
+	margin: 0 3px;
+	line-height: 1.5;
+}
+
+.left-list-top  label  i {
+	margin-right: 10px;
+}
+
+.left-list-top  input[type="radio"]:checked+label {
+	background: rgba(255, 255, 255, .14);
+	color: white;
+}
+
+.left-list-top  input {
+	display: none;
+}
+
+.left-list-top > hr {
+	margin-top: 0;
+	margin-bottom: 10px;
+	background: rgba(255, 255, 255, .3);
+	display: block;
+	height: 1px;
+	border: none;
+}
+
+h2 {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-left: 10px;
+}
+
+.section7 ul {
+	padding: 12px 24px 0;
+}
+.section7 li{
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.section7 li a {
+	font-size: 13px;
+	color: rgba(255, 255, 255, .7);
+}
+
+.small {
+	font-size: 12px;
+	color: rgba(255, 255, 255, .3);
+	padding: 16px 24px;
+}
+
+

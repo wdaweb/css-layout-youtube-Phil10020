@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/youtube.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/stylesheet/all.css">
     <title>YouTube</title>
 </head>
+
 <body>
     <div class="header relative">
         <div class="menu float-l relative top-50">
@@ -20,45 +27,163 @@
             <img src="./images/YouTube_Logo_2017.svg" alt="youtube" class="">
             <span>TW</span>
         </a>
-				<div class="search-bar-wrap relative">
-					<div class="search-bar float-l relative">
-            <input type="search" placeholder="搜尋" class="absolute left-0">
-            <button type="button" class="absolute right-0">
-							<s>
-									<i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-							</s>
-            </button>
+        <div class="search-bar-wrap relative">
+            <div class="search-bar float-l relative">
+                <input type="search" placeholder="搜尋" class="absolute left-0">
+                <button type="button" class="absolute right-0">
+                    <s>
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </s>
+                </button>
+            </div>
+            <div class="">
+                <s>
+                    <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
+                </s>
+            </div>
         </div>
-				<button>
-					<s>
-							<i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
-					</s>
-				</button>
-				</div>
-        <div class="top-info">
-            <s></s>
-            <s></s>
-            <s></s>
+        <div class="top-info float-r">
+            <s><i class="fa-solid fa-video" style="color: #ffffff;"></i></s>
+            <s><i class="fa-regular fa-bell" style="color: #ffffff;"></i></s>
+            <s><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></s>
         </div>
     </div>
-    <div class="container">
-        <div class="left-list"></div>
-        <div class="right-list">
+    <div class="container relative">
+        <div class="left-list absolute left-0 top-50">
+            <div class="left-list-top">
+                <div class="section1">
+                    <input type="radio" id="b1" name="left-list" checked>
+                    <label for="b1"><i class="fa-solid fa-house" style="color: #ffffff;"></i>首頁</label>
+                    <input type="radio" id="b2" name="left-list">
+                    <label for="b2"><i class="fa-solid fa-video" style="color: #ffffff;"></i> Shorts</label>
+                    <input type="radio" id="b3" name="left-list">
+                    <label for="b3"><i class="fa-solid fa-photo-film" style="color: #ffffff;"></i> 訂閱內容</label>
+                </div>
+                <hr>
+                <br>
+                <div class="section2">
+                    <input type="radio" id="b4" name="left-list">
+                    <label for="b4"><i class="fa-solid fa-film" style="color: #ffffff;"></i>媒體庫</label>
+                    <input type="radio" id="b5" name="left-list">
+                    <label for="b5"><i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>觀看紀錄</label>
+                    <input type="radio" id="b6" name="left-list">
+                    <label for="b6"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>你的影片</label>
+                    <input type="radio" id="b7" name="left-list">
+                    <label for="b7"><i class="fa-regular fa-clock" style="color: #ffffff;"></i>稍後觀看</label>
+                    <input type="radio" id="b8" name="left-list">
+                    <label for="b8"><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>喜歡的影片</label>
+                </div>
+                <hr>
+                <div class="section3">
+                    <h2>訂閱內容</h2>
+                    <input type="radio" id="c1" name="left-list">
+                    <label for="c1"><i class="fa-solid fa-film" style="color: #ffffff;"></i>阿紅RedKai_遊戲頻道</label>
+                    <input type="radio" id="c2" name="left-list">
+                    <label for="c2"><i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>無口君Wuco</label>
+                    <input type="radio" id="c3" name="left-list">
+                    <label for="c3"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>競技場Evan</label>
+                    <input type="radio" id="c4" name="left-list">
+                    <label for="c4"><i class="fa-regular fa-clock" style="color: #ffffff;"></i>Luke mS</label>
+                    <input type="radio" id="c5" name="left-list">
+                    <label for="c5"><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>老高與小茉 Mr & Mrs
+                        Gao</label>
+                </div>
+                <hr>
+                <div class="section4">
+                    <h2>探索</h2>
+                    <input type="radio" id="d1" name="left-list">
+                    <label for="d1"><i class="fa-solid fa-film" style="color: #ffffff;"></i>發燒影片</label>
+                    <input type="radio" id="d2" name="left-list">
+                    <label for="d2"><i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>音樂</label>
+                    <input type="radio" id="d3" name="left-list">
+                    <label for="d3"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>電影</label>
+                    <input type="radio" id="d4" name="left-list">
+                    <label for="d4"><i class="fa-regular fa-clock" style="color: #ffffff;"></i>直播</label>
+                    <input type="radio" id="d5" name="left-list">
+                    <label for="d5"><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>遊戲</label>
+                </div>
+                <hr>
+
+                <div class="section5">
+                    <h2>更多YouTube功能</h2>
+                    <input type="radio" id="e1" name="left-list">
+                    <label for="e1"><i class="fa-solid fa-film" style="color: #ffffff;"></i>YouTube Premium</label>
+                    <input type="radio" id="e2" name="left-list">
+                    <label for="e2"><i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>YouTube
+                        工作室</label>
+                    <input type="radio" id="e3" name="left-list">
+                    <label for="e3"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>YouTube
+                        Music</label>
+                    <input type="radio" id="e4" name="left-list">
+                    <label for="e4"><i class="fa-regular fa-clock" style="color: #ffffff;"></i>YouTube Kids</label>
+                    <input type="radio" id="e5" name="left-list">
+                    <label for="e5"><i class="fa-regular fa-thumbs-up" style="color: #ffffff;"></i>喜歡的影片</label>
+                </div>
+                <hr>
+
+                <div class="section6">
+                    <input type="radio" id="f1" name="left-list">
+                    <label for="f1"><i class="fa-solid fa-film" style="color: #ffffff;"></i>設定</label>
+                    <input type="radio" id="f2" name="left-list">
+                    <label for="f2"><i class="fa-solid fa-clock-rotate-left" style="color: #ffffff;"></i>檢舉紀錄</label>
+                    <input type="radio" id="f3" name="left-list">
+                    <label for="f3"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>說明</label>
+                    <input type="radio" id="f4" name="left-list">
+                    <label for="f4"><i class="fa-regular fa-clock" style="color: #ffffff;"></i>提供意見</label>
+                </div>
+                <hr>
+
+                <div class="section7">
+                    <ul>
+                        <li><a href="">簡介</a></li>
+                        <li><a href="">媒體</a></li>
+                        <li><a href="">版權</a></li>
+                        <li><a href="">與我們聯絡</a></li>
+                        <li><a href="">創作者</a></li>
+                        <li><a href="">廣告</a></li>
+                        <li><a href="">開發人員</a></li>
+                    </ul>
+                    <ul>
+
+                        <li><a href="">條款</a></li>
+                        <li><a href="">隱私權</a></li>
+                        <li><a href="">政權與安全性</a></li>
+                        <li><a href="">YouTube運作方式</a></li>
+                        <li><a href="">測試新功能</a></li>
+                    </ul>
+                    <div class="small">&copy;2023 Google LLC</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="right-list float-r">
             <div class="right-list-top">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <input type="radio" id="a1" name="right-list" checked>
+                <label for="a1">全部</label>
+                <input type="radio" id="a2" name="right-list">
+                <label for="a2">遊戲</label>
+                <input type="radio" id="a3" name="right-list">
+                <label for="a3">直播中</label>
+                <input type="radio" id="a4" name="right-list">
+                <label for="a4">音樂</label>
+                <input type="radio" id="a5" name="right-list">
+                <label for="a5">動畫</label>
+                <input type="radio" id="a6" name="right-list">
+                <label for="a6">精靈寶可夢</label>
+                <input type="radio" id="a7" name="right-list">
+                <label for="a7">新聞</label>
+                <input type="radio" id="a8" name="right-list">
+                <label for="a8">木工</label>
+                <input type="radio" id="a9" name="right-list">
+                <label for="a9">觀光</label>
+                <input type="radio" id="a10" name="right-list">
+                <label for="a10">動作冒險遊戲</label>
+                <input type="radio" id="a11" name="right-list">
+                <label for="a11">卡通</label>
+                <input type="radio" id="a12" name="right-list">
+                <label for="a12">讓你耳目一新的影片</label>
+
             </div>
             <div class="right-list-content">
                 <div class="col"></div>
@@ -68,4 +193,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -49,3 +49,27 @@
 .right-100 {
     right:100%;
 }
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: red;
+}
+
+::-webkit-scrollbar-thumb {
+    background: dark-gray;
+}
