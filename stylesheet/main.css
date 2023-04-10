@@ -102,6 +102,8 @@ a {
 	border-radius: 50%;
 }
 
+/* ------------ right區塊 --------------  */
+
 .right-list {
 	height: calc(100vh - 56px);
 	display: inline-block;
@@ -112,6 +114,7 @@ a {
 
 .right-list-top {
 	height: 56px;
+	overflow: hidden;
 }
 
 .right-list-top > label:hover {
@@ -143,18 +146,40 @@ a {
 	display: none;
 }
 
+.card {
+	display: inline-block;
+	width: 360px;
+	height: 320px;
+	background-color: pink;
+	margin: 5px 5px;
+	
+}
+
+/* -------------left區塊--------------  */
 
 .left-list {
 	width: 15%;
 	height: calc(100vh - 56px);
 	display: inline-block;
 	padding: 5px 5px;
-	overflow: hidden;
-	/* background: #fff; */
+	/* overflow: hidden; */
+	overflow:scroll;
 }
 
-.left-list:hover {
-	overflow:scroll;
+
+
+.left-list::-webkit-scrollbar {
+	width: 8px;
+}
+
+.left-list::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 -1px -1px white;
+	border-radius: 5px;
+	display:none;
+}
+.left-list:hover::-webkit-scrollbar-thumb {
+	display: block;
 }
 
 .left-list-top  label:hover {
