@@ -110,6 +110,11 @@ a {
 	width: 80%;
 }
 
+.right-list-content > hr {
+	display: block;
+	clear: both;
+	
+}
 
 
 .right-list-top {
@@ -211,6 +216,18 @@ margin-top: 12px;
 	color: #aaa;
 }
 
+.shorts-title > h2 {
+	font-size: 20px;
+	display: inline-block;
+}
+
+.shorts-title > img {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 
 
 /* -------------left區塊--------------  */
@@ -228,7 +245,12 @@ margin-top: 12px;
 
 .left-list::-webkit-scrollbar {
 	width: 8px;
+	display: none;
 }
+.left-list:hover::-webkit-scrollbar {
+	display: block;
+}
+
 
 .left-list::-webkit-scrollbar-thumb {
 	background: rgba(255, 255, 255, 0.4);
@@ -246,6 +268,15 @@ margin-top: 12px;
 	color: white;
 	transition: background-color .3s ease-in-out;
 
+}
+
+.left-list-top img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
 }
 
 .left-list-top  label {
