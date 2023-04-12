@@ -10,6 +10,19 @@ body {
     font-family: 'Roboto','Arial', sans-serif;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-track {
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 -1px -1px white;
+	border-radius: 10px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -65,6 +78,11 @@ a {
 	margin-left: 10px;
 }
 
+.search-bar-wrap div:nth-child(2):hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+
 .search-bar-wrap div:nth-child(2) > s {
 	line-height: 40px;
 }
@@ -91,15 +109,24 @@ a {
 	width: 64px;
 }
 
-.top-info {
-	margin-top: 25px;
-}
 
 .top-info > s{
+	display: inline-block;
 	height: 40px;
 	width: 40px;
-	margin: 10px;
 	border-radius: 50%;
+	font-size: 20px;
+}
+
+.top-info > s > i {
+	line-height: 40px;
+}
+.top-info > s:hover{
+	background: rgba(255,255,255,0.2);
+}
+
+.voice, .search-bar>button, .top-info s{
+	cursor: pointer;
 }
 
 /* ------------ right區塊 --------------  */
@@ -110,10 +137,42 @@ a {
 	width: 80%;
 }
 
+
 .right-list-content > hr {
 	display: block;
 	clear: both;
+	height: 4px;
+	border: none;
+	background: rgba(255, 255, 255, .3);
 	
+}
+
+/* shorts card  */
+.shorts-card {
+	width: calc(100% / 9);
+	height: 430px;
+	float: left;
+	margin-right: 20px;
+	/* background: pink; */
+	
+}
+
+.shorts-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.shorts-body > .card-title,.card-time {
+	line-height: 1.5;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+} 
+
+
+.shorts-head img {
+	width: 100%;
+	border-radius: 15px;
 }
 
 
@@ -158,9 +217,6 @@ a {
 	margin: 5px 5px;
 	position: relative;
 	float: left;
-	
-	
-	
 }
 
 .card:hover iframe {
